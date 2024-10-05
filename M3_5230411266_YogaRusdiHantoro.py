@@ -7,7 +7,8 @@ class rumah_makan:
         print("2. soto (Rp.15000)")
         print("3.  gorengan(Rp.1000)")
         print("4. ingkung (Rp.55000)")
-        print("5. es lwmon (Rp.6000)")
+        print("5. es lemon (Rp.6000)")
+        print("6.es teh (Rp 4.000)")
     def struk(A,B,C,D):
         import datetime
         print("")
@@ -35,13 +36,14 @@ while True:
         Menu = int(input("Pilih menu (1-5) atau (0) untuk mengakhiri pembelian : "))
         if Menu == 0:
             break
-        if Menu in [1, 2, 3, 4, 5]:
+        if Menu in [1, 2, 3, 4, 5, 6]:
             menu_harga = {
                 1: ('Bakso', 10000),
                 2: ('soto', 15000),
                 3: ('gorengan', 1000),
                 4: ('ingkung', 15000),
-                5: ('es lemon', 6000)
+                5: ('es lemon', 6000),
+                6: ('es teh ', 4000)
             }
             if Menu in menu_harga:
                 menu, harga = menu_harga[Menu]
